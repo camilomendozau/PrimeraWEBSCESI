@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 350px;
+    background-image: url(https://res.cloudinary.com/earthronicleaner/image/upload/v1624632695/PrimerWebSCESI/images/patron-1_zrwuhl.png);
+}
+footer{
+    background-color: #212429;
+}
