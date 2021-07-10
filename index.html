@@ -15,43 +15,43 @@
   </head>
   <body>
     <header></header>
+    <aside class="aside-container">
+      <ul>
+        <h5>Variantes del proyecto</h5>
+        <a href="" class="aside-container__li"><li>Nemium A</li></a>
+        <a href="" class="aside-container__li"><li>Nemium B</li></a>
+        <a href="" class="aside-container__li"><li>Nemium C</li></a>
+        <a href="" class="aside-container__li"><li>Nemium D</li></a>
+        <a href="" class="aside-container__li"><li>Nemium E</li></a>
+      </ul>
+      <details class="aside-container__details">
+        <summary>Setup</summary>
+        <ol>
+          <a href="#Chrome"> <li>Google Chrome</li> </a
+          ><a href="#VSCode"> <li>Visual Studio Code</li></a
+          ><a href="#Figma"> <li>Figma</li></a
+          ><a href="#GitHub">
+            <li>GitHub</li>
+          </a>
+        </ol>
+      </details>
+      <details class="aside-container__details">
+        <summary>Conceptos esenciales del Desarrollo Web</summary>
+        <ol>
+          <a href="#Html"> <li>Qué es HTML</li> </a
+          ><a href="#Etiquetas"> <li>Etiquetas</li> </a
+          ><a href="#DOM"> <li>DOM</li> </a
+          ><a href="#Semantica"> <li>Semantica</li> </a
+          ><a href="#Atributos"> <li>Atributos</li> </a
+          ><a href="#CSS">
+            <li>Qué es CSS</li>
+          </a>
+        </ol>
+      </details>
+    </aside>
     <main>
-      <section>
-        <aside>
-          <ul>
-            Variantes del proyecto
-            <li>Nemium A</li>
-            <li>Nemium B</li>
-            <li>Nemium C</li>
-            <li>Nemium D</li>
-            <li>Nemium E</li>
-          </ul>
-          <details>
-            <summary>Setup</summary>
-            <ol>
-              <a href=""> <li>Google Chrome</li> </a
-              ><a href=""> <li>Visual Studio Code</li></a
-              ><a href=""> <li>Figma</li></a
-              ><a href="">
-                <li>GitHub</li>
-              </a>
-            </ol>
-          </details>
-          <details>
-            <summary>Conceptos esenciales del Desarrollo Web</summary>
-            <ol>
-              <a href=""> <li>Qué es HTML</li> </a
-              ><a href=""> <li>Etiquetas</li> </a
-              ><a href=""> <li>DOM</li> </a
-              ><a href=""> <li>Semantica</li> </a
-              ><a href=""> <li>Atributos</li> </a
-              ><a href="">
-                <li>Qué es CSS</li>
-              </a>
-            </ol>
-          </details>
-        </aside>
-        <div class="title-container">
+      <section class="setup-container">
+        <div class="setup-container__title">
           <h1>Curso esencial de HTML y CSS</h1>
           <p>
             Este es el inicio de tu carrera como Desarrollador Web, empezarás
@@ -59,43 +59,49 @@
             aprenderás de componentes y en 3 sobre layouts.
           </p>
         </div>
-        <div class="">
-          <h2>Setup</h2>
+        <div>
+          <h2 class="title-section">Setup</h2>
           <div class="items-setup-container">
             <ol>
-              <div>
+              <div class="items-setup-container__item" id="Chrome">
                 <img
                   src="https://res.cloudinary.com/earthronicleaner/image/upload/v1624632694/PrimerWebSCESI/images/chrome-black_oi0rsg.png"
                   alt="google-black-img"
+                  class="items-setup-container__img"
                 />
-                <li>Google Chrome</li>
+                <h5 class="items-setup-container__title">1. Google Chrome</h5>
                 <p>
-                  Chrome va a ser el navegador que utilizaremos en el curso por
-                  su extenso soporte de nuevos estándares y herramientas de
+                  Chrome va a ser
+                  <i>el navegador que utilizaremos en el curso</i> por su
+                  extenso soporte de nuevos estándares y herramientas de
                   desarrollo avanzadas y de amigable uso.
                 </p>
               </div>
-              <div>
+              <div class="items-setup-container__item" id="VSCode">
                 <img
                   src="https://res.cloudinary.com/earthronicleaner/image/upload/v1624632695/PrimerWebSCESI/images/vs-code-black_olvb15.png"
                   alt="google-black-img"
                 />
-                <li>Visual Studio Code</li>
+                <h5 class="items-setup-container__title">
+                  2. Visual Studio Code
+                </h5>
+
                 <p>
-                  Visual Studio Code es el editor de texto más popular y potente
-                  del mercado actualmente, su fácil uso y la capacidad de
-                  extenderlo por medio de plugins lo hace el complemento
-                  perfecto para cualquier programador sin importar el lenguaje
-                  en el que se desemvuelva.
+                  Visual Studio Code es
+                  <i
+                    >el editor de texto más popular y potente del mercado
+                    actualmente</i
+                  >, su fácil uso y la capacidad de extenderlo por medio de
+                  plugins lo hace el complemento perfecto para cualquier
+                  programador sin importar el lenguaje en el que se desemvuelva.
                 </p>
               </div>
-
-              <div>
+              <div class="items-setup-container__item" id="Figma">
                 <img
                   src="https://res.cloudinary.com/earthronicleaner/image/upload/v1624632694/PrimerWebSCESI/images/figma-black_yjjaqi.png"
                   alt="figma-black-img"
                 />
-                <li>Figma</li>
+                <h5 class="items-setup-container__title">3. Figma</h5>
                 <p>
                   Figma es una la herramienta más popular en la actualidad para
                   entregar diseños a los desarrolladores para su implementación
@@ -103,42 +109,43 @@
                   navegador.
                 </p>
               </div>
-
-              <div>
+              <div class="items-setup-container__item" id="GitHub">
                 <img
                   src="https://res.cloudinary.com/earthronicleaner/image/upload/v1624632695/PrimerWebSCESI/images/github-black_vsv0c5.png"
                   alt="github-black-img"
                 />
-                <li>GitHub</li>
+                <h5 class="items-setup-container__title">4. GitHub</h5>
                 <p>
-                  Así como en Facebook te encuentran tus amigos, en Github te
-                  encuentran otras programadoras y programadores de todo el
-                  mundo, en vez de subir fotos de tus viajes aquí subes tu
-                  código y puedes elegir hacerlo “open source” o guardarlo de
+                  Así como en Facebook te encuentran tus amigos, en Github
+                  <i>te encuentran otras programadoras y programadores</i> de
+                  todo el mundo, en vez de subir fotos de tus viajes aquí subes
+                  tu código y puedes elegir hacerlo “open source” o guardarlo de
                   manera privada, Github será esencial para almacenar tu futuro
                   portafolio.
                 </p>
               </div>
             </ol>
           </div>
-          <div>
-            <q>Este es el inicio de tu carrera como Desarrollador Web</q>
-            <i>Leonidas Esteban</i>
+          <div class="phrase-container">
+            <q class="phrase-container__msg"
+              >Este es el inicio de tu carrera como Desarrollador Web</q
+            >
+            <i class="phrase-container__autor">Leonidas Esteban</i>
           </div>
         </div>
       </section>
       <section>
-        <h2>Conceptos esenciales del Desarrollo Web</h2>
+        <h2 class="title-section">Conceptos esenciales del Desarrollo Web</h2>
         <ol>
-          <div class="essential-concepts-container">
-            <li>Qué es HTML</li>
-            <p>
+          <div class="essential-concepts-container" id="Html">
+            <h5 class="essential-concepts-container__title">1. Qué es HTML</h5>
+            <p class="essential-concepts-container__text">
               Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el
               componente más básico de la web. Define el significado y la
               estructura del contenido.
             </p>
-            <pre>
-                <code>
+            <pre class="essential-concepts-container__code-container">
+                <code class="essential-concepts-container__code">
                     &lt;!DOCTYPE html&gt;
                     &lt;html lang="en"&gt;
                     &lt;head&gt;
@@ -153,15 +160,15 @@
                 </code>
             </pre>
           </div>
-          <div class="essential-concepts-container">
-            <li>Etiquetas</li>
-            <p>
+          <div class="essential-concepts-container" id="Etiquetas">
+            <h5 class="essential-concepts-container__title">2. Etiquetas</h5>
+            <p class="essential-concepts-container__text">
               Las etiquetas HTML van a ayudarnos a brindar una estructura y
               semántica al contenido de nuestro website y cada una tiene
               características y usos diferentes aunque visualmente den un
               resultado similar.
             </p>
-            <p>
+            <p class="essential-concepts-container__text">
               Muchas etiquetas son fácil de diferencias como los headings o las
               imágenes y otras diferentes como header, footer, section o div,
               aquí es donde la semántica será la respuesta y si sabemos un poco
@@ -170,9 +177,9 @@
               de tu día a día como Software Developer.
             </p>
           </div>
-          <div class="essential-concepts-container">
-            <li>DOM</li>
-            <p>
+          <div class="essential-concepts-container" id="DOM">
+            <h5 class="essential-concepts-container__title">3. DOM</h5>
+            <p class="essential-concepts-container__text">
               El Document Object Model es una estructura de árbol que
               representará todos nuestros proyectos web como si un árbol
               genealógico fuera: padres, hijos, hermanos con niveles infinitos.
@@ -182,13 +189,12 @@
             <img
               src="https://res.cloudinary.com/earthronicleaner/image/upload/v1624632695/PrimerWebSCESI/images/dom-black_bfdkfw.jpg"
               alt="estructura-dom-img"
-              width="900"
-              height="470"
+              class="essential-concepts-container__img"
             />
           </div>
-          <div class="essential-concepts-container">
-            <li>Semantica</li>
-            <p>
+          <div class="essential-concepts-container" id="Semantica">
+            <h5 class="essential-concepts-container__title">4. Semantica</h5>
+            <p class="essential-concepts-container__text">
               La semántica le brinda sentido a cada elemento existen en un sitio
               web, algunos elementos será meramente decorativos y no deben
               significar nada pero otros serán títulos y deberán estar en
@@ -201,9 +207,9 @@
               contenido.
             </p>
           </div>
-          <div class="essential-concepts-container">
-            <li>Atributos</li>
-            <p>
+          <div class="essential-concepts-container" id="Atributos">
+            <h5 class="essential-concepts-container__title">5. Atributos</h5>
+            <p class="essential-concepts-container__text">
               Los atributos le dan características extra a las etiquetas para
               complementar información y son pre programadas por el navegador,
               algunos atributos funcionan en todas las etiquetas de la misma
@@ -211,9 +217,9 @@
               etiquetas como src
             </p>
           </div>
-          <div class="essential-concepts-container">
-            <li>CSS</li>
-            <p>
+          <div class="essential-concepts-container" id="CSS">
+            <h5 class="essential-concepts-container__title">6. CSS</h5>
+            <p class="essential-concepts-container__text">
               Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o
               CSS es el lenguaje de estilos utilizado para describir la
               presentación de documentos HTML
@@ -221,17 +227,18 @@
             <img
               src="https://res.cloudinary.com/earthronicleaner/image/upload/v1624632695/PrimerWebSCESI/images/css-black_vheaxl.jpg"
               alt="css-img"
-              width="900"
-              height="430"
+              class="essential-concepts-container__img"
             />
           </div>
         </ol>
       </section>
-      <section>
-        <h2>Modelo de Caja</h2>
-        <div>
-          <h3>El modelo de caja está compuesto por:</h3>
-          <p>
+      <section class="box-model_container">
+        <h2 class="title-section">Modelo de Caja</h2>
+        <div class="box-model_container__group">
+          <h3 class="box-model_container__group--title">
+            El modelo de caja está compuesto por:
+          </h3>
+          <p class="box-model_container__group--text">
             Chrome va a ser el navegador que utilizaremos en el curso por su
             extenso soporte de nuevos estándares y herramientas de desarrollo
             avanzadas y de amigable uso.
@@ -243,8 +250,10 @@
             <li>Margin / Márgenes</li>
           </ol>
         </div>
-        <div>
-          <h3>Propiedades físicas para el modelo de caja:</h3>
+        <div class="box-model_container__group">
+          <h3 class="box-model_container__group--title">
+            Propiedades físicas para el modelo de caja:
+          </h3>
           <ul>
             <li>width/height</li>
             <li>
@@ -259,8 +268,10 @@
             </li>
           </ul>
         </div>
-        <div>
-          <h3>Propiedades lógicas para el modelo de caja:</h3>
+        <div class="box-model_container__group">
+          <h3 class="box-model_container__group--title">
+            Propiedades lógicas para el modelo de caja:
+          </h3>
           <ul>
             <li>inline-size / block-size</li>
             <li>
@@ -277,45 +288,63 @@
             </li>
           </ul>
         </div>
-        <div>
-          <h3>Modelo de caja</h3>
+        <div class="box-model_container__group">
+          <h3 class="box-model_container__group--title">Modelo de caja</h3>
           <img
             src="https://res.cloudinary.com/earthronicleaner/image/upload/v1624641911/PrimerWebSCESI/images/Rectangle_56_yyz16v.png"
             alt="leonidas-esteban-foto"
-            width="902"
-            height="464"
+            class="essential-concepts-container__img"
           />
         </div>
         <div class="contact-information-content">
-          <p>
+          <p class="contact-information-content__email">
             Si tienes alguna pregunta escríbeme a
-            <a href="me@leonidasesteban.com">
+            <a href="me@leonidasesteban.com" type="email">
               <strong>me@leonidasesteban.com</strong>
             </a>
           </p>
-          <form action="" method="post">
-            <input type="text" name="" id="" placeholder="Nombre" />
-
-            <div>
+          <h4>Suscríbete a nuestro newsletter</h4>
+          <form action="" method="post" class="form-newsletter-container">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Nombre"
+              class="form-newsletter-container__input"
+            />
+            <div class="submit-container">
               <input
                 type="email"
                 name=""
                 id=""
                 placeholder="Correo electronico"
+                class="
+                  form-newsletter-container__input
+                  form-newsletter-container__button--longest
+                "
               />
-              <input type="button" value="Suscribirme" />
+              <input
+                type="button"
+                value="Suscribirme"
+                class="form-newsletter-container__button"
+              />
             </div>
           </form>
         </div>
       </section>
     </main>
     <footer>
-      <h3>© Leonidas Esteban 2021</h3>
+      <h3 class="autor-name">© Leonidas Esteban 2021</h3>
       <div class="social-media-icon-container">
+        <img
+          src="https://res.cloudinary.com/earthronicleaner/image/upload/v1624632726/PrimerWebSCESI/icons/instagram_bcanzo.svg"
+          alt="instagram-icon"
+        />
         <img
           src="https://res.cloudinary.com/earthronicleaner/image/upload/v1624632725/PrimerWebSCESI/icons/facebook_quiicp.svg"
           alt="facebook-icon"
-        /><img
+        />
+        <img
           src="https://res.cloudinary.com/earthronicleaner/image/upload/v1624632725/PrimerWebSCESI/icons/twitter_w09ruh.svg"
           alt="twitter-icon"
         />

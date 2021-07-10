@@ -8,14 +8,219 @@
   box-sizing: border-box;
 }
 html {
+  font-size: 16px;
   color: var(--color-font);
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  display: grid;
+  grid-template-rows: 5% 85% 10%;
+  grid-template-columns: 20% 80%;
+}
+aside {
+  margin: 0 10%;
+}
+summary {
+  cursor: pointer;
+}
+main {
+  padding: 2%;
 }
 header {
+  grid-row: 1/2;
+  grid-column: 1/3;
   width: 100%;
   height: 15vw;
   background-image: url(https://res.cloudinary.com/earthronicleaner/image/upload/v1624632695/PrimerWebSCESI/images/patron-1_zrwuhl.png);
 }
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-row: 5/6;
+  grid-column: 1/3;
   background-color: var(--color-bk);
+}
+
+.aside-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.aside-container__details {
+  margin: 10% 0;
+}
+.aside-container h5 {
+  font-size: 0.875rem;
+}
+.aside-container ul li {
+  font-size: 0.875rem;
+  padding: 8% 5%;
+  font-weight: 500;
+  list-style: none;
+  border-radius: 5px;
+}
+.aside-container ol li {
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 8% 5%;
+}
+.aside-container ul a {
+  text-decoration: none;
+  color: var(--color-font);
+}
+.aside-container a :hover {
+  background-color: black;
+  color: #ffffff;
+}
+.aside-container__details a {
+  text-decoration: none;
+  color: var(--color-font);
+}
+.setup-container__title {
+  margin-bottom: 2rem;
+}
+.setup-container__title h1 {
+  font-size: 3.75rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.title-section {
+  margin: 3rem 0;
+  font-size: 2rem;
+}
+.items-setup-container {
+  margin-top: 2rem;
+}
+.items-setup-container__item {
+  padding-right: 2%;
+  padding-bottom: 4%;
+}
+.items-setup-container__title {
+  border-bottom: solid 4px var(--color-font);
+  width: max-content;
+  font-size: 1.5rem;
+  margin: 1% 0 1% 0;
+  padding-bottom: 0.5rem;
+}
+.phrase-container {
+  display: flex;
+  flex-direction: column;
+  border-left: solid 4px var(--color-font);
+  margin: 2rem;
+  padding-left: 1rem;
+}
+.phrase-container__msg {
+  padding-bottom: 0.5rem;
+}
+.essential-concepts-container__title {
+  border-bottom: solid 4px var(--color-font);
+  width: max-content;
+  font-size: 1.5rem;
+  margin: 1% 0 1% 0;
+  padding-bottom: 0.5rem;
+}
+.essential-concepts-container__text {
+  margin: 2rem 0;
+}
+.essential-concepts-container__code-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+  background-color: #fec62e;
+}
+.essential-concepts-container__code-container code {
+  align-self: flex-start;
+  margin-right: 25%;
+  font-family: "Roboto", sans-serif;
+}
+.essential-concepts-container__img {
+  width: 100%;
+}
+.box-model_container__group--title {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  padding-left: 0;
+}
+.box-model_container__group--text {
+  margin-bottom: 1.5rem;
+}
+.box-model_container__group {
+  margin: 2rem 0;
+}
+.box-model_container__group ul li {
+  margin: 0.9rem;
+}
+.box-model_container__group ol li {
+  margin: 0.2rem 0.9rem;
+}
+.social-media-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.social-media-icon-container {
+  margin: 2%;
+}
+.social-media-icon-container img {
+  width: 2rem;
+  margin: 0.5rem;
+}
+.autor-name {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #ffffff;
+}
+.contact-information-content {
+  margin: 5%;
+}
+.contact-information-content__email {
+  padding: 1rem 0;
+}
+.contact-information-content__email a {
+  color: #212121;
+}
+.contact-information-content h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+.form-newsletter-container {
+  display: flex;
+  flex-direction: row;
+}
+.form-newsletter-container__input {
+  height: 2.5rem;
+  margin: 0 0.5rem;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #424242;
+  border: solid #424242 1px;
+  border-radius: 2em;
+}
+.form-newsletter-container__button {
+  position: absolute;
+  width: 35%;
+  height: 2.5rem;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  border-radius: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  left: 210px;
+}
+.form-newsletter-container__button--longest {
+  width: 65%;
+}
+.submit-container {
+  position: relative;
+  width: 50%;
+  height: 15%;
 }
